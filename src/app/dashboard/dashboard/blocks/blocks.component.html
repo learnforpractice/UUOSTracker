@@ -7,8 +7,8 @@
 <div class="table-container mat-elevation-z1" *ngIf="blocks$ | async as blocks; else loading">
   <table mat-table [dataSource]="blocks" style="border:none;">
     <ng-container *ngIf="blocksColumns$ | async as blocksColumns">
-      <tr mat-header-row *matHeaderRowDef="blocksColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: blocksColumns;"></tr>
+      <tr mat-header-row *matHeaderRowDef="blocksColumns" ></tr>
+      <tr (click)="changecolor()" mat-row *matRowDef="let row; columns: blocksColumns;" [ngClass]="{'bgcolor': classFlag}"></tr>
     </ng-container>
     <ng-container matColumnDef="block_num">
       <th mat-header-cell *matHeaderCellDef>{{ 'Block Number' | translate }}</th>

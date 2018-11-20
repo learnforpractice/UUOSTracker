@@ -1,5 +1,5 @@
-<header fxLayout="row" fxLayoutAlign="start center">
-  <div fxFlex *ngIf="!searchExpanded">
+<header fxLayout="row">
+  <div *ngIf="!searchExpanded" class="header-title">
     <button mat-icon-button fxHide.gt-sm (click)="onMenuToggle.emit()">
       <mat-icon>menu</mat-icon>
     </button>

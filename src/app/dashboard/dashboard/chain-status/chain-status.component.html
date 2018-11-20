@@ -4,33 +4,28 @@
     {{ 'Network Info' | translate }}
   </mat-card-title>
   <mat-card-content class="table-container">
-    <table>
-      <tr>
-        <td>{{ 'Server Version' | translate }}:</td>
-        <td>{{status.server_version_string}}</td>
-      </tr>
-      <tr>
-        <td>{{ 'Chain ID' | translate }}:</td>
-        <td>{{status.chain_id}}</td>
-      </tr>
-      <tr>
-        <td>{{ 'Head Block Timestamp' | translate }}:</td>
-        <td>{{status.head_block_time | amFromUtc | date:'MMM d, y, h:mm:ss.SSS a'}}</td>
-      </tr>
-      <tr>
-        <td>{{ 'Head Block #' | translate }}:</td>
-        <td><a [routerLink]="['/blocks',status.head_block_num]">{{status.head_block_num}}</a></td>
-      </tr>
-      <tr>
-        <td>{{ 'Head Block Producer' | translate }}:</td>
-        <td>
-          <a [routerLink]="['/producers',status.head_block_producer]">{{status.head_block_producer}}</a>
-        </td>
-      </tr>
-      <tr>
-        <td>{{ 'Last Irreversible Block #' | translate }}:</td>
-        <td><a [routerLink]="['/blocks',status.last_irreversible_block_num]">{{status.last_irreversible_block_num}}</a></td>
-      </tr>
-    </table>
+      <table style="table-layout:fixed;border:none">
+          
+          <tbody>
+            <tr>
+              <td><span>{{ 'Server Version' | translate }}:</span>{{status.server_version_string}}</td>
+              <td><span>{{ 'Head Block #' | translate }}:</span><a [routerLink]="['/blocks',status.head_block_num]">{{status.head_block_num}}</a></td>
+            </tr>
+            <tr>
+                <td><span>{{ 'Chain ID' | translate }}:</span>{{status.chain_id}}</td>
+                <td><span>{{ 'Head Block Producer' | translate }}:</span>
+                  <a [routerLink]="['/producers',status.head_block_producer]">{{status.head_block_producer}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td><span>{{ 'Head Block Timestamp' | translate }}:</span>
+                  {{status.head_block_time | amFromUtc | date:'MMM d, y, h:mm:ss.SSS a'}}
+                </td>
+                <td><span>{{ 'Last Irreversible Block #' | translate }}:</span><a [routerLink]="['/blocks',status.last_irreversible_block_num]">{{status.last_irreversible_block_num}}</a></td>
+            </tr>
+          </tbody>
+      </table>
+    
   </mat-card-content>
 </mat-card>
+

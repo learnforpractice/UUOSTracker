@@ -7,14 +7,20 @@
 }
 
 app-header {
-  height: 50px;
+  height: 94px;
 }
 
 mat-sidenav-container {
-  padding-top: 50px;
+  padding-top: 94px;
   height: 100%;
 }
 
 mat-sidenav {
-  width: 200px;
+  width: 300px;
+  background: linear-gradient(to right,#505D8F,#4E6697)
+}
+
+
+.mat-list-item-content{
+  padding: 0 30px !important;
 }
