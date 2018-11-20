@@ -1,10 +1,10 @@
 <div fxLayout="row" fxLayoutAlign="space-between center" style="margin:20px 5px 10px;">
-  <h3 class="mat-subheading-2" fxFlex>
+  <h3 class="fontnew" fxFlex>
     {{ 'Recent Blocks' | translate }}
   </h3>
-  <a mat-stroked-button color="accent" [routerLink]="['/blocks']">{{ 'ViewAll' | translate }}</a>
+  <a mat-stroked-button color="accent" [routerLink]="['/blocks']">{{ 'ViewAll' | translate }}>></a>
 </div>
-<div class="table-container mat-elevation-z1" *ngIf="blocks$ | async as blocks; else loading">
+<div class="table-container " *ngIf="blocks$ | async as blocks; else loading">
   <table mat-table [dataSource]="blocks" style="border:none;">
     <ng-container *ngIf="blocksColumns$ | async as blocksColumns">
       <tr mat-header-row *matHeaderRowDef="blocksColumns" ></tr>
