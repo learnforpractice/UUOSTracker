@@ -8,7 +8,7 @@
   <table mat-table [dataSource]="blocks" style="border:none;">
     <ng-container *ngIf="blocksColumns$ | async as blocksColumns">
       <tr mat-header-row *matHeaderRowDef="blocksColumns" ></tr>
-      <tr (click)="changecolor()" mat-row *matRowDef="let row; columns: blocksColumns;" [ngClass]="{'bgcolor': classFlag}"></tr>
+      <tr (click)="changecolor(i)" mat-row *matRowDef="let row; columns: blocksColumns; let i = index;" [class.bgcolor]="selectedindex === i"></tr>
     </ng-container>
     <ng-container matColumnDef="block_num">
       <th mat-header-cell *matHeaderCellDef>{{ 'Block Number' | translate }}</th>

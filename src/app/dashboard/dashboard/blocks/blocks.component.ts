@@ -13,13 +13,13 @@ export class BlocksComponent implements OnInit {
 
   blocks$: Observable<any[]>;
   blocksColumns$ = of(BLOCKS_COLUMNS);
-  classFlag = false;
+  selectedindex = -1;
   constructor(
     private breakpointObserver: BreakpointObserver,
     private appService: AppService
   ) { }
-    changecolor(): void{
-      this.classFlag = true;
+    changecolor(i): void{
+      this.selectedindex = i;
     }
   ngOnInit() {
     this.blocks$ = this.appService.recentBlocks$;
