@@ -1,10 +1,10 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="demoheader">
   <h1 class="mat-headline">
     {{ 'Blocks' | translate }}
   </h1>
 </mat-toolbar>
-<div style="margin:10px;">
-  <div class="table-container mat-elevation-z1" *ngIf="blocks$ | async as blocks; else loading">
+<div style="margin:15px 30px;">
+  <div class="table-container" *ngIf="blocks$ | async as blocks; else loading">
     <table mat-table [dataSource]="blocks" style="border:none;">
       <ng-container *ngIf="columnHeaders$ | async as blocksColumns">
         <tr mat-header-row *matHeaderRowDef="blocksColumns"></tr>

@@ -1,9 +1,9 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="demoheader">
   <h1 class="mat-headline">
     {{ 'Producers' | translate }}
   </h1>
 </mat-toolbar>
-<div style="margin:10px;">
+<div style="margin:15px 30px;">
   <app-vote-progress-bar [chainStatus]="chainStatus$ | async" style="margin:20px 0;"></app-vote-progress-bar>
   <app-table [dataSource]="producers$ | async" [enablePager]="false">
     <table mat-table [dataSource]="producers$ | async">
