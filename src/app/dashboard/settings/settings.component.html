@@ -1,9 +1,9 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="demoheader">
   <h1 class="mat-headline">
     {{ 'Settings' | translate }}
   </h1>
 </mat-toolbar>
-<div style="margin:20px;">
+<div style="margin:20px 30px;">
   <mat-form-field>
     <mat-select placeholder="Preferred Language" [formControl]="languageControl">
       <mat-option *ngFor="let language of languages" [value]="language.code">
@@ -12,7 +12,7 @@
     </mat-select>
   </mat-form-field>
 </div>
-<div style="margin:20px;">
+<div style="margin:20px 30px;">
   <mat-form-field>
     <mat-select placeholder="Preferred API" [formControl]="apiControl">
       <mat-option *ngFor="let api of apis" [value]="api.endpoint">
