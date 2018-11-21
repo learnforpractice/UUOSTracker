@@ -46,19 +46,8 @@ export class SidenavComponent implements OnInit {
         icon: 'settings',
         link: '/settings',
         name: this.translate.instant('Settings')
-      },
-      {
-        icon: 'account_balance_wallet',
-        external: true,
-        link: environment.walletUrl,
-        name: this.translate.instant('Wallet')
-      },
-      {
-        icon: 'how_to_vote',
-        external: true,
-        link: environment.votingUrl,
-        name: this.translate.instant('Voting')
       }
+    
     ];
   }
 
