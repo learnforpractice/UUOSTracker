@@ -21,11 +21,20 @@ table {
   }
   th:first-child,
   td:first-child {
-    padding-left: 15px !important;
+    padding-left: 36px !important;
   }
   th:last-child,
   td:last-child {
     padding-right: 15px !important;
   }
   
+}
+.demoheader{
+  margin: 20px 30px;
+  width: auto;
+  color: #FDD700;
+  height: 84px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.07);
+  border-radius: 7px;
+  background: #2A2A2A;
 }
