@@ -13,7 +13,6 @@
 }
 .table-container {
     border-radius: 5px;
-    border: 1px solid #DFE5E7;
 }
 .mat-table {
     color: #404040;
@@ -21,3 +20,9 @@
 .mat-paginator-page-size{
     display: none;
 }
+td{   
+    border-bottom: 1px solid rgba(226,231,232,0.1);
+  } 
+th{   
+    border-bottom: 1px solid rgba(226,231,232,0.1);
+  }

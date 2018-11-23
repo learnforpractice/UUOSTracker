@@ -6,7 +6,6 @@
   padding: 0;
   box-shadow: none !important;
   border-radius: 5px;
-  border: 1px solid #DFE5E7;
   font-size: 14px;
   background: #2A2A2A;
   color: #C8D0DB;
@@ -26,14 +25,13 @@
 }
 
 .mat-card-title{
-  border-bottom: 1px solid #DDDDDD;
   margin: 0;
   padding: 17px 36px;
   color: #FDD700;
   font-weight: bold;
 }
 table td{   
-    border-bottom: 1px solid #E2E7E8;
+    border-top: 1px solid rgba(226,231,232,0.1);
     overflow: hidden;
     height: 45px;
   } 

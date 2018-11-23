@@ -11,26 +11,26 @@
       <tr (click)="changecolor(i)" mat-row *matRowDef="let row; columns: blocksColumns; let i = index;" [class.bgcolor]="selectedindex === i"></tr>
     </ng-container>
     <ng-container matColumnDef="block_num">
-      <th mat-header-cell *matHeaderCellDef>{{ 'Block Number' | translate }}</th>
-      <td mat-cell *matCellDef="let block">
+      <th *matHeaderCellDef>{{ 'Block Number' | translate }}</th>
+      <td *matCellDef="let block">
         <a [routerLink]="['/blocks',block.block_num]">{{block.block_num}}</a>
       </td>
     </ng-container>
     <ng-container matColumnDef="timestamp">
-      <th mat-header-cell *matHeaderCellDef>{{ 'Timestamp' | translate }}</th>
-      <td mat-cell *matCellDef="let block">
+      <th *matHeaderCellDef>{{ 'Timestamp' | translate }}</th>
+      <td *matCellDef="let block">
         {{block.timestamp | amFromUtc | amTimeAgo}}
       </td>
     </ng-container>
     <ng-container matColumnDef="producer">
-      <th mat-header-cell *matHeaderCellDef>{{ 'Producer' | translate }}</th>
-      <td mat-cell *matCellDef="let block">
+      <th *matHeaderCellDef>{{ 'Producer' | translate }}</th>
+      <td *matCellDef="let block">
         <a [routerLink]="['/producers',block.producer]">{{block.producer}}</a>
       </td>
     </ng-container>
     <ng-container matColumnDef="transactions">
-      <th mat-header-cell *matHeaderCellDef>{{ 'Transactions' | translate }}</th>
-      <td mat-cell *matCellDef="let block">
+      <th *matHeaderCellDef>{{ 'Transactions' | translate }}</th>
+      <td *matCellDef="let block">
         {{block.transactions.length}}
       </td>
     </ng-container>
