@@ -4,7 +4,7 @@
   </h1>
 </mat-toolbar>
 <ng-container *ngIf="block$ | async as block; else loading">
-  <mat-tab-group color="primary" dynamicHeight="true" *ngIf="!block.isError; else error" style="margin: 15px 30px;">
+  <mat-tab-group color="accent" dynamicHeight="true" *ngIf="!block.isError; else error" style="margin: 15px 30px;">
     <mat-tab>
       <ng-template mat-tab-label>
         <mat-icon style="margin-right:5px;">info</mat-icon>
