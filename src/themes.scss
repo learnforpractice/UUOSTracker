@@ -13,7 +13,7 @@ $mat-eosio: (
     900 : #1f1b29,
     A100 : #ffffff,
     A200 : #FDD700,
-    A400 : #470aff,
+    A400 : #2A2A2A,
     A700 : #3c00f0,
     contrast: (
         50 : #000000,
@@ -28,14 +28,14 @@ $mat-eosio: (
         900 : #ffffff,
         A100 : #000000,
         A200 : #ffffff,
-        A400 : #ffffff,
+        A400 : #FDD700,
         A700 : #ffffff,
     )
 );
 
 @include mat-core();
 
-$app-light-primary: mat-palette($mat-eosio,A100);
+$app-light-primary: mat-palette($mat-eosio,A400);
 $app-light-accent: mat-palette($mat-eosio, A200);
 $app-light-warn: mat-palette($mat-eosio,100,200);
 $app-light-theme: mat-light-theme($app-light-primary, $app-light-accent, $app-light-warn);
