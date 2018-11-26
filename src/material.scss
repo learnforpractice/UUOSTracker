@@ -44,3 +44,26 @@ pre{
   outline: none !important;
 }
 
+.mat-form-field-flex{
+  background: #2A2A2A;
+}
+.mat-select-value{
+  color:#FDD700;
+}
+.mat-form-field-label{
+  color: #B8BFC9 !important;
+  padding: 8px 30px 4px !important;
+  border-bottom: 1px solid #fff;
+}
+.mat-form-field-infix{
+  padding: 5px 23px !important;
+}
+.mat-expansion-indicator::after{
+  color: #fff;
+}
+.mat-form-field-label-wrapper{
+  padding: 0;
+}
+.mat-select-value{
+  padding: 15px 0 7px;
+}
