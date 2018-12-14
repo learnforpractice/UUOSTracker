@@ -1,13 +1,13 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="demoheader">
   <h1 class="mat-headline">
     {{ 'Producer' | translate }}
     <span *ngIf="producer$ | async as producer">{{producer.account?.account_name}}</span>
   </h1>
 </mat-toolbar>
 <div *ngIf="producer$ | async as producer; else loading">
-  <app-producer-information [producer]="producer" style="margin:10px;"></app-producer-information>
+  <app-producer-information [producer]="producer" style="margin: 15px 30px;"></app-producer-information>
   <app-producer-nodes [location]="producer.location" style="margin:10px;"></app-producer-nodes>
-  <mat-card style="margin:10px;">
+  <mat-card style="margin: 15px 30px;">
     <mat-card-title>Account Raw Data</mat-card-title>
     <mat-card-content>
       <prettyjson [obj]="producer.account"></prettyjson>
