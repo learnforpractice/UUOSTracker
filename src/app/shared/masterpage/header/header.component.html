@@ -3,10 +3,13 @@
     <button mat-icon-button fxHide.gt-sm (click)="onMenuToggle.emit()">
       <mat-icon>menu</mat-icon>
     </button>
-    <a class="brand" routerLink="/">
+    <a class="brand" fxHide.xs fxHide.sm routerLink="/">
       <img [src]="logoUrl" />
       <span>{{ appName | translate }}</span>
     </a>
+    <a class="brand-m" fxHide.gt-sm routerLink="/">
+      <img [src]="logoUrl" />
+    </a>
   </div>
-  <app-search (onSearchExpanded)="searchExpanded = $event" [ngClass]="searchExpanded ? 'search-expanded' : 'search-collapsed'"></app-search>
+  <app-search style="margin-right: 30px" (onSearchExpanded)="searchExpanded = $event" [ngClass]="searchExpanded ? 'search-expanded' : 'search-collapsed'"></app-search>
 </header>

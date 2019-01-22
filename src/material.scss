@@ -1,16 +1,14 @@
 .mat-table {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, .12);
-  background: #2a2a2a;
 }
-
+.mat-card {
+  color:#404040;
+}
 .mat-header-cell {
   font-size: 14px;
   font-weight: 600;
   color: inherit;
-}
-.mat-toolbar{
-  background: #2A2A2A;
 }
 .mat-headline,
 .mat-title,
@@ -18,38 +16,26 @@
 .mat-subheading-1 {
   margin: 0;
 }
-.mat-paginator-container{
-  background: #2A2A2A;
-}
-.mat-expansion-panel{
-  background: #2A2A2A; 
-}
 .mat-paginator{
   color: #999999;
 }
 .mat-tab-labels{
-  background: #2A2A2A; 
   border-radius: 7px;
 }
-.mat-tab-label{
-  color: #FDD700;
+.mat-tab-label-active{
+  color:#3B8EF3;
 }
 .mat-drawer-container{
-  color: #ffffff;
+  color: #404040;
 }
 pre{
-  background: #2A2A2A;
   margin: 10px 0 !important;
   padding: 15px !important;
   outline: none !important;
 }
 
 .mat-form-field-flex{
-  background: #2A2A2A;
   border-radius: 1px;
-}
-.mat-select-value{
-  color:#FDD700;
 }
 .mat-form-field-label{
   color: #B8BFC9 !important;
@@ -60,7 +46,7 @@ pre{
   padding: 5px 16px !important;
 }
 .mat-expansion-indicator::after{
-  color: #fff;
+  color: #999999;
 }
 .mat-form-field-label-wrapper{
   padding: 0;
@@ -68,16 +54,25 @@ pre{
 .mat-select-value{
   padding: 15px 7px 7px;
 }
-.mat-select-content{
-  background: #2a2a2a;
-}
-.mat-option{
-  color:#FDD700;
-}
-.mat-selected{
-  color: #FDD700 !important;
-  background: rgba(255, 255, 255, 0.05) !important;
-}
 .mat-select-arrow {
   color: #B8BFC9;
+}
+.mat-expansion-panel{
+  color:#404040;
+}
+.mat-expansion-panel-header-title{
+  color:#404040;
+}
+.mat-cell{
+  color:#404040;
+}
+.mat-progress-bar-fill::after{
+  background:#F28F96;
+}
+.mat-progress-bar-buffer{
+  background:#F3D5D7;
+}
+.mat-tab-label-container{
+  background: #ffffff;
+  border-radius: 7px 7px 0px 0px;
 }

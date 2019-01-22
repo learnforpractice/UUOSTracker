@@ -2,8 +2,8 @@
 
 $mat-eosio: (
     50 : #e9e8ea,
-    100 : rgba(253,215,0,0.8),
-    200 : #4C451A,
+    100 : #F28F96,
+    200 : #F3D5D7,
     300 : #7c7987,
     400 : #605c6e,
     500 : #443f54,
@@ -12,8 +12,8 @@ $mat-eosio: (
     800 : #2d293a,
     900 : #1f1b29,
     A100 : #ffffff,
-    A200 : #FDD700,
-    A400 : #2A2A2A,
+    A200 : #2074C9,
+    A400 : #ffffff,
     A700 : #3c00f0,
     contrast: (
         50 : #000000,
@@ -28,7 +28,7 @@ $mat-eosio: (
         900 : #ffffff,
         A100 : #000000,
         A200 : #ffffff,
-        A400 : #FDD700,
+        A400 : #2074C9,
         A700 : #ffffff,
     )
 );
@@ -41,7 +41,7 @@ $app-light-warn: mat-palette($mat-eosio,100,200);
 $app-light-theme: mat-light-theme($app-light-primary, $app-light-accent, $app-light-warn);
 @include angular-material-theme($app-light-theme);
 
-$app-dark-primary: mat-palette($mat-eosio);
+$app-dark-primary: mat-palette($mat-eosio,A400);
 $app-dark-accent: mat-palette($mat-eosio, A200, A100, A400);
 $app-dark-warn: mat-palette($mat-red);
 $app-dark-theme: mat-dark-theme($app-dark-primary, $app-dark-accent, $app-dark-warn);

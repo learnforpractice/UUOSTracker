@@ -4,7 +4,7 @@
   </button>
   <form (submit)="search()" novalidate fxShow.gt-xs fxHide.xs style="min-width:360px;">
     <mat-icon>search</mat-icon>
-    <input type="search" placeholder="{{ 'SearchBy' | translate }}" [formControl]="query" class="mat-elevation-z1">
+    <input type="search" placeholder="{{ 'SearchBy' | translate }}" [formControl]="query">
   </form>
 </ng-container>
 <ng-template #expandedView>
