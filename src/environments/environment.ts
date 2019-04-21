@@ -10,6 +10,6 @@ export const environment = {
   appName: 'UUOS Network',
   logoUrl: '/assets/logo.png',
   logoUrl1: '/assets/logo_blue.png',
-  blockchainUrl: 'http://nodes.uuos.network:8880',
+  blockchainUrl: 'https://nodes.uuos.network:8443',
   chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
 };
