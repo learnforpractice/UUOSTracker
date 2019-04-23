@@ -8,7 +8,7 @@
       <span>{{ appName | translate }}</span>
     </a>
     <a class="brand-m" fxHide.gt-sm routerLink="/">
-      <img [src]="logoUrl_1" />
+      <img [src]="logoUrl" />
     </a>
   </div>
   <app-search style="margin-right: 30px" (onSearchExpanded)="searchExpanded = $event" [ngClass]="searchExpanded ? 'search-expanded' : 'search-collapsed'"></app-search>

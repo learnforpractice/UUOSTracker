@@ -11,7 +11,6 @@ export class HeaderComponent implements OnInit {
   @Output() onMenuToggle = new EventEmitter();
 
   logoUrl = environment.logoUrl;
-  logoUrl_1 = environment.logoUrl1;
   appName = environment.appName;
   searchExpanded = false;
 
