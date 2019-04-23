@@ -2,9 +2,9 @@ export const environment = {
   production: true,
   walletUrl: 'https://walleteos.com',
   votingUrl: 'https://eosportal.io',
-  appName: 'EOS Tracker',
+  appName: 'UUOS Network',
   logoUrl: '/assets/logo.png',
   logoUrl1: '/assets/logo_blue.png',
-  blockchainUrl: 'https://eos.greymass.com',
+  blockchainUrl: 'https://nodes.uuos.network:8443',
   chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
 };
