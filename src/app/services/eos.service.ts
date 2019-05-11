@@ -56,6 +56,10 @@ export class EosService {
   }
 
   getDeferBlock(id: string | number): Observable<any> {
+    id = id.toString();
+    if (id.length % 2 != 0) {
+      id =  '0'+id;
+    }
     return defer(() => from(this.eos.getBlock(id)));
   }
 
@@ -118,6 +122,10 @@ export class EosService {
   }
 
   getBlockRaw(id: string | number): Observable<Result<any>> {
+    id = id.toString();
+    if (id.length % 2 != 0) {
+      id =  '0'+id;
+    }
     const getBlock$ = defer(() => from(this.eos.getBlock(id)));
     return this.getResult<any>(getBlock$);
   }
