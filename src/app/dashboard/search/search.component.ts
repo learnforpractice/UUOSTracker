@@ -83,7 +83,7 @@ export class SearchComponent implements OnInit {
   }
 
   private tryAccount(query: string): Observable<string> {
-    if (query.length <= 12) {
+    if (query.length <= 13) {
       return this.eosService.getDeferAccount(query).pipe(
         catchError(() => of(null)),
         switchMap(account => {
